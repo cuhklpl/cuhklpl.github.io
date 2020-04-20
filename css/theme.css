@@ -80,7 +80,7 @@ body>.navbar .brand:hover {
 /* Sidenav for Docs
          -------------------------------------------------- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
 	.bs-docs-sidenav {
 		display: none !important;
 	}
