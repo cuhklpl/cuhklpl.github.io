@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Publications</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="CUHK Language Processing Lab">
+      <meta name="author" content="">
+      <!-- Le styles -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+      <link href="css/theme.css" rel="stylesheet">
+	  <style>
+		ol {
+	display: block;
+	list-style-type: disc;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 40px;
+	}
+	</style>
+   </head>
+   <body>
+      <div class="container">
+         <header id="overview">
+		    <img alt="" src="images/lab.jpg">
+         </header>
+         <div class="masthead">
+            <div class="navbar">
+               <div class="navbar-inner">
+                  <div class="container">
+                     <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="index.html">Grants</a></li>
+						<li class="active"><a href="#">Publications</a></li>
+						<li><a href="forum.html">Forum</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="row-fluid">
+            <div class="span12">
+               <section id="articles">
+                  <div class="page-header">
+                     <h3>Selected grants</h3>
+                  </div>
+                    <ol>		
+			    		<li class="publication"> General Research Fund (14600220; PI). <em>Rational interlocutor modelling in language comprehension and production.</em>January 2021 – December 2023, HK$751,708.</li>
+              <li class="publication"> CUHK Faculty of Arts Direct Grant (PI). <em>A developmental study of Chinese character handwriting among Hong Kong school students.</em>September 2021 – August 2022, HK$100,000.</li>
+              <li class="publication"> CUHK Faculty of Arts Direct Grant (PI). <em>RThe role of linguistic prediction in interpreting.</em>January 2021 – April 2020 – March 2021, HK$90,000.</li>
+              <li class="publication"> CUHK-University of Manchester Research Fund – Seed-corn Fund 2019 (PI). <em>The embodiment of language syntax in the brain.</em>Aug 2019 – July 2020, HK$50,000.</li>
+              <li class="publication"> CUHK Faculty of Arts Direct Grant (PI). <em> Interlocutor-sensitive language comprehension and production: The case of lexical processing.</em>April 2019 – March 2020, HK$96,443.</li>
+              <li class="publication"> ESRC Future Research Leader award (ES/L010224/1; PI). <em>Embodied language production.</em>March 2015 – March 2018, £192,455.</li>
+              <li class="publication"> National Natural Science Foundation of China research grant (31571142; co-I). <em>Sensorimotor simulation in bilingual language comprehension.</em>January 2016 – December 2017, ¥250,000.</li>
