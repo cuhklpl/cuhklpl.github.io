@@ -34,9 +34,9 @@
                      <ul class="nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="people.html">People</a></li>
-                        <li><a href="index.html">Grants</a></li>
-						<li class="active"><a href="#">Publications</a></li>
-						<li><a href="forum.html">Forum</a></li>
+                        <li class="active"><a href="#">Grants</a></li>
+			<li><a href="publication.html">Publication</a></li>
+			<li><a href="forum.html">Forum</a></li>
                      </ul>
                   </div>
                </div>
@@ -51,9 +51,9 @@
                   </div>
                     <ol>		
 			    		<li class="publication"> General Research Fund (14600220; PI). <em>Rational interlocutor modelling in language comprehension and production.</em>January 2021 – December 2023, HK$751,708.</li>
-              <li class="publication"> CUHK Faculty of Arts Direct Grant (PI). <em>A developmental study of Chinese character handwriting among Hong Kong school students.</em>September 2021 – August 2022, HK$100,000.</li>
-              <li class="publication"> CUHK Faculty of Arts Direct Grant (PI). <em>RThe role of linguistic prediction in interpreting.</em>January 2021 – April 2020 – March 2021, HK$90,000.</li>
-              <li class="publication"> CUHK-University of Manchester Research Fund – Seed-corn Fund 2019 (PI). <em>The embodiment of language syntax in the brain.</em>Aug 2019 – July 2020, HK$50,000.</li>
-              <li class="publication"> CUHK Faculty of Arts Direct Grant (PI). <em> Interlocutor-sensitive language comprehension and production: The case of lexical processing.</em>April 2019 – March 2020, HK$96,443.</li>
-              <li class="publication"> ESRC Future Research Leader award (ES/L010224/1; PI). <em>Embodied language production.</em>March 2015 – March 2018, £192,455.</li>
-              <li class="publication"> National Natural Science Foundation of China research grant (31571142; co-I). <em>Sensorimotor simulation in bilingual language comprehension.</em>January 2016 – December 2017, ¥250,000.</li>
+              <li class="grant"> CUHK Faculty of Arts Direct Grant (PI). <em>A developmental study of Chinese character handwriting among Hong Kong school students.</em>September 2021 – August 2022, HK$100,000.</li>
+              <li class="grant"> CUHK Faculty of Arts Direct Grant (PI). <em>RThe role of linguistic prediction in interpreting.</em>January 2021 – April 2020 – March 2021, HK$90,000.</li>
+              <li class="grant"> CUHK-University of Manchester Research Fund – Seed-corn Fund 2019 (PI). <em>The embodiment of language syntax in the brain.</em>Aug 2019 – July 2020, HK$50,000.</li>
+              <li class="grant"> CUHK Faculty of Arts Direct Grant (PI). <em> Interlocutor-sensitive language comprehension and production: The case of lexical processing.</em>April 2019 – March 2020, HK$96,443.</li>
+              <li class="grant"> ESRC Future Research Leader award (ES/L010224/1; PI). <em>Embodied language production.</em>March 2015 – March 2018, £192,455.</li>
+              <li class="grant"> National Natural Science Foundation of China research grant (31571142; co-I). <em>Sensorimotor simulation in bilingual language comprehension.</em>January 2016 – December 2017, ¥250,000.</li>
