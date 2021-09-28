@@ -13,3 +13,18 @@
                      </div>
                   </div>
                   <hr>
+
+
+               </div>
+		  <div class="row-fluid">
+                     <div class="span3 post">
+                      <img src="thumbs/shuting.jpg" alt="shuting"/>                        
+                     </div>
+                     <div class="span9 post">
+                        <h4>Shuting HUANG</h4>
+						<p>Research Assistant</p>
+                        <p><b>Research Interests: </b>Language Processing in Chinese; Corpus Linguistics</p>						
+                        <p><b>Email: </b>shutinghuang[at]cuhk.edu.hk</p>
+						<p><b><a href="https://www.researchgate.net/profile/Shuting_Huang13">ResearchGate</a></b></p>
+                     </div>
+                  </div>
