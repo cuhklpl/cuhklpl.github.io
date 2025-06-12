@@ -1,6 +1,10 @@
 body {
-	padding-top: 15px;
+	padding-top: 0;
 	padding-bottom: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f5f7fa;
 }
 
 
@@ -9,72 +13,104 @@ body {
 .container {
 	margin: 0 auto;
 	max-width: 1000px;
+	padding: 0 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .container>hr {
-	margin: 20px 0
+	margin: 30px 0;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+
+.row-fluid {
+	margin: 0;
+	padding: 0 20px;
+}
+
+.row-fluid .span12,
+.row-fluid .span8,
+.row-fluid .span9 {
+	margin-left: 0;
+	padding: 0 20px;
+}
+
+.section-card {
+	margin: 0;
+	padding: 20px;
+}
+
+.page-header {
+	margin: 20px 0;
+	padding: 0;
 }
 
 
 /* Customize the navbar links to be fill the entire space of the .navbar */
 
 .navbar .navbar-inner {
-	padding: 0
+	padding: 0;
+	width: 100%;
+	max-width: 970px;
+	margin: 0 auto;
+	background: #ffffff;
+	border-bottom: 1px solid #e0e0e0;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+	margin: 0 auto;
+	max-width: 970px;
+	justify-content: space-between;
+	background: #ffffff;
 }
 
 .navbar .nav {
-	margin: 0;
-	display: table;
+	margin: 0 auto;
+	display: flex;
 	width: 100%;
+	padding: 0;
+	border-radius: 4px;
 }
 
 .navbar .nav li {
-	display: table-cell;
-	width: 1%;
-	float: none;
+	flex: 1;
+	text-align: center;
+	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar .nav li a {
-	font-weight: bold;
-	text-align: center;
-	border-left: 1px solid rgba(255, 255, 255, .75);
-	border-right: 1px solid rgba(0, 0, 0, .1);
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 15px 0;
+	box-sizing: border-box;
+	border-bottom: 2px solid transparent;
+	color: #666;
+	transition: all 0.2s ease;
 }
 
-.navbar .nav li:first-child a {
-	border-left: 0;
-	border-radius: 3px 0 0 3px;
+.navbar .nav li a:hover {
+	color: #000;
+	background-color: #f8f8f8;
+	border-bottom: 2px solid #666;
 }
 
-.navbar .nav li:last-child a {
-	border-right: 0;
-	border-radius: 0 3px 3px 0;
+.navbar .nav li.active a {
+	color: #000;
+	border-bottom: 2px solid #333;
+	font-weight: 500;
 }
 
-body>.navbar {
-	font-size: 1em
-}
 
 
 /* Change the docs' brand */
 
-body>.navbar .brand {
-	padding-right: 0;
-	padding-left: 0;
-	margin-left: 20px;
-	float: right;
-	font-weight: bold;
-	color: #000;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
-	-webkit-transition: all .2s linear;
-	-moz-transition: all .2s linear;
-	transition: all .2s linear;
-}
 
-body>.navbar .brand:hover {
-	text-decoration: none;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .4);
-}
 
 
 /* Sidenav for Docs
@@ -328,17 +364,17 @@ body>.navbar .brand:hover {
 
 .section-header {
 	text-align: center;
-	margin-bottom: 35px;
+	margin-bottom: 20px;
+	margin-top: 0;
 }
 
 .section-header h1,
 .title-text {
 	font-weight: bold;
 	font-size: 30px;
-	margin: 12.5px 0;
+	margin: 0 0 10px;
 	font-weight: 100;
-	margin-bottom: 25px;
-	line-height: 55px;
+	line-height: 1.3;
 }
 
 .feature-item:hover {
@@ -396,7 +432,7 @@ body>.navbar .brand:hover {
 	padding: 45px 0px 35px 0px;
 	color: #fff;
 	text-align: center;
-	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+	text-shadow: none;
 	background: #30393C;
 	background: -moz-linear-gradient(45deg, #30393C 0%, #000000 100%);
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #30393C), color-stop(100%, #30393C));
@@ -404,9 +440,9 @@ body>.navbar .brand:hover {
 	background: -o-linear-gradient(45deg, #30393C 0%, #000000 100%);
 	background: -ms-linear-gradient(45deg, #30393C 0%, #000000 100%);
 	background: linear-gradient(45deg, #30393C 0%, #000000 100%) repeat;
-	-webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
-	-moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
-	box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 .jumbotron:after {
@@ -424,7 +460,8 @@ body>.navbar .brand:hover {
 	margin-bottom: 0px;
 	font-size: 21px;
 	font-weight: 200;
-	line-height: 15px;
+	line-height: 1.5;
+	margin-top: 0;
 }
 
 img.float-left {
@@ -535,7 +572,7 @@ ul.sponsors {
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #30393C;
-	line-height: 35px;
+	line-height: 1.3;
 	margin-bottom: 20px;
 	margin-top: 25px;
 	font-weight: normal;
@@ -549,4 +586,183 @@ ul.sponsors {
 #footer address {
 	color: #8F8F8F;
 	font-size: 11px;
+	line-height: 1.5;
+}
+
+.marketing {
+	margin-top: 5px;
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+.marketing p {
+	font-size: 16px;
+	margin-bottom: 15px;
+	color: #444;
+	line-height: 1.5;
+}
+
+.marketing ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.marketing ol li {
+	position: relative;
+	padding: 15px 0;
+	border-bottom: 1px solid #edf2f7;
+	margin: 0;
+	line-height: 1.5;
+}
+
+.marketing ol li:last-child {
+	border-bottom: none;
+}
+
+.marketing ol li b {
+	display: block;
+	color: #2c3e50;
+	font-size: 16px;
+	margin-bottom: 8px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.marketing ol li em {
+	color: #666;
+	font-style: italic;
+	line-height: 1.5;
+	display: block;
+	margin-top: 4px;
+}
+
+.marketing ol li:hover {
+	background-color: #f8fafc;
+}
+
+.marketing h4 {
+	color: #2c3e50;
+	margin: 30px 0 15px;
+	font-weight: 600;
+	font-size: 24px;
+	border-bottom: none;
+	padding-bottom: 0;
+	position: relative;
+	display: inline-block;
+	line-height: 1.3;
+}
+
+.marketing h4:after {
+	display: none;
+}
+
+.marketing b {
+	color: #2c3e50;
+	font-weight: 600;
+}
+
+
+#overview img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+/* Card styling for main sections */
+.marketing .section-card {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 25px;
+	margin-bottom: 30px;
+	transition: all 0.05s ease;
+	border: 1px solid #eee;
+}
+
+
+.marketing .section-card h4 {
+	color: #2c3e50;
+	margin: 0 0 20px;
+	font-weight: 600;
+	font-size: 24px;
+	border-bottom: none;
+	padding-bottom: 0;
+	position: relative;
+	display: inline-block;
+}
+
+.marketing .section-card h4:after {
+	display: none;
+}
+
+/* News section styling */
+.marketing .section-card.news-card {
+	position: relative;
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.marketing .section-card.news-card h4 {
+	position: sticky;
+	top: 0;
+	background: #fff;
+	padding: 15px 0;
+	margin: 0 0 15px;
+	z-index: 1;
+	line-height: 1.3;
+}
+
+.marketing .section-card.news-card .news-container {
+	max-height: 500px;
+	overflow-y: auto;
+	padding: 10px 0;
+	scrollbar-width: thin;
+	scrollbar-color: #737373 #f5f5f5;
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+}
+
+.marketing .section-card.news-card .news-container::-webkit-scrollbar {
+	width: 8px;
+}
+
+.marketing .section-card.news-card .news-container::-webkit-scrollbar-track {
+	background: #f5f5f5;
+	border-radius: 4px;
+}
+
+.marketing .section-card.news-card .news-container::-webkit-scrollbar-thumb {
+	background-color: #757778;
+	border-radius: 4px;
+	border: 2px solid #f5f5f5;
+}
+
+.marketing .section-card.news-card .news-container::-webkit-scrollbar-thumb:hover {
+	background-color: #757576;
+}
+
+.marketing .section-card.news-card .news-container p {
+	font-size: 16px;
+	margin-bottom: 15px;
+	color: #444;
+	line-height: 1.5;
+}
+
+.marketing .section-card.news-card .news-container a {
+	color: #838485;
+	text-decoration: none;
+	transition: color 0.05s ease;
+}
+
+.marketing .section-card.news-card .news-container a:hover {
+	color: #707272;
+	text-decoration: underline;
 }

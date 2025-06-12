@@ -1,137 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>CUHK Language Processing Lab - Home</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="CUHK Language Processing Lab">
-      <meta name="author" content="">
-      <!-- Le styles -->
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-      <link href="css/theme.css" rel="stylesheet">
-	   <style>
-		ol {
-	display: block;
-	list-style-type: disc;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: 0;
-	margin-right: 0;
-	padding-left: 40px;
-	}
-	</style>
-	  </head>
-   <body>
-      <div class="container">
-         <header id="overview">
-			<img alt="" src="images/lab_new.png">
-		</header>
-         <div class="masthead">
-            <div class="navbar">
-               <div class="navbar-inner">
-                  <div class="container">
-                     <ul class="nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="people.html">People</a></li>
-			<li><a href="grants.html">Grants</a></li>
-			<li><a href="publications.html">Publications</a></li>			
-			<li><a href="forum.html">Forum</a></li>
-                      </ul>
+
+<head>
+   <meta charset="utf-8">
+   <title>CUHK Language Processing Lab - Home</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="CUHK Language Processing Lab">
+   <meta name="author" content="">
+   <!-- Le styles -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+   <link href="css/theme.css" rel="stylesheet">
+   <style>
+      ol {
+         display: block;
+         list-style-type: disc;
+         margin-top: 1em;
+         margin-bottom: 1em;
+         margin-left: 0;
+         margin-right: 0;
+         padding-left: 40px;
+      }
+
+      .image-carousel {
+         width: 100%;
+         max-width: 400px;
+         margin: 20px 0;
+         overflow: hidden;
+      }
+
+      .carousel-container {
+         display: flex;
+         transition: transform 0.5s ease-in-out;
+      }
+
+      .carousel-slide {
+         min-width: 100%;
+         box-sizing: border-box;
+      }
+
+      .carousel-slide img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <header id="overview">
+         <img alt="" src="images/lab_new.png">
+      </header>
+      <div class="masthead">
+         <div class="navbar">
+            <div class="navbar-inner">
+
+               <ul class="nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="people.html">People</a></li>
+                  <li><a href="grants.html">Grants</a></li>
+                  <li><a href="publications.html">Publications</a></li>
+                  <li><a href="forum.html">Forum</a></li>
+               </ul>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="container-fluid">
+         <div class="row-fluid marketing">
+            <div class="span12">
+               <br>
+               <p>
+                  The Language Processing Lab is based in <a href="http://ling.cuhk.edu.hk/" target="_blank">Department
+                     of Linguistics and Modern Languages</a> and <a href="http://bmi.cuhk.edu.hk/" target="_blank">Brain
+                     and Mind Institute</a>, The Chinese University of Hong Kong.
+                  We are interested in language comprehension, production and learning. The lab has the following
+                  foci
+                  in research, among others.
+               </p>
+               <ol>
+                  <li><b>Language comprehension and production </b> (e.g., How people take their interlocutor into
+                     account in comprehending and producing language)</li>
+                  <li><b>Handwriting literacy </b> (e.g., Chinese handwriting literacy: deep-learning-based diagnosis
+                     and neurocognitive mechanisms) </li>
+                  <li><b>Explainable AI/machine behaviours</b> (e.g., Do large language models resemble humans in
+                     language use?) </li>
+               </ol>
+
+               <div class="image-carousel">
+                  <div class="carousel-container">
+                     <div class="carousel-slide">
+                        <img src="images/xufeng_hanlin_viva.png" alt="Lab Image 1">
+                     </div>
+                     <div class="carousel-slide">
+                        <img src="images/yumeng_BBQ.png" alt="Lab Image 2">
+                     </div>
+                     <div class="carousel-slide">
+                        <img src="images/2022.png" alt="Lab Image 3">
+                     </div>
+                  </div>
+               </div>
+
+               <h4>JOINING THE LAB</h4>
+               <ol>
+                  <li><b>Positions available </b>The lab is looking for a postdoc or research assistant with good
+                     experience in fMRI, Bayesian modelling, or machine learning. If you have such skills, please
+                     send
+                     your CV to zhenguangcai(at)cuhk.edu.hk.</li>
+                  <li><b>PhD application </b>The lab has been successful in obtaining three <a
+                        href="https://cerg1.ugc.edu.hk/hkpfs/index.html" target="_blank">Hong Kong PhD
+                        Fellowships</a>
+                     and a couple of CUHK scholarships, apart from some departmental studentships. If you want to do
+                     a
+                     PhD at the lab (and in the Department of Linguistics and Modern Languages), please send us an
+                     email. We are only interested in applicants with a strong empirical/computational background.
+                  </li>
+               </ol>
+               <hr>
+
+
+               <div class="section-card news-card">
+                  <h4>NEWS IN THE LAB</h4>
+                  <div class="news-container">
+                     <ol>
+                        <li><b>24 May 2025.</b> Our lab has a paper accepted. Xiao, B., Duan, X., Haslett, D. A., & Cai,
+                           Z. G. (in press). Human-likeness of LLMs in the Mental Lexicon. <em>Conference on
+                              Computational
+                              Natural Language Learning .</em></li>
+                        <li><b>27 April 2025.</b> Our lab has a paper accepted. Xu, Z., Zhang, Y., & Cai, Z. G. (in
+                           press).
+                           Phonetic and semantic radical priming in Chinese character amnesia. <em>Journal of
+                              Experimental
+                              Psychology: Learning, Memory, and Cognition .</em> </li>
+                        <li><b>25 April 2025.</b> Many congratulations to Dr Hanlin Wu for his successful PhD viva!</li>
+                        <li><b>23 April 2025.</b> Many congratulations to Dr Xufeng Duan for his successful PhD viva!
+                        </li>
+                        <li><b>22 April 2025. </b>Our lab has a paper accepted for publication. Qiu, Z., Duan, X. & Cai,
+                           Z.
+                           G.
+                           (in press). Grammaticality representation in ChatGPT as compared to linguists and laypeople.
+                           <em>Humanities and Social Sciences Communications.</em>
+                        </li>
+                        <li><b>13 April 2025. </b>Our lab has a paper accepted for publication. Xu, Z., Yang, Y., Yuan,
+                           T.,
+                           Feng, G., & Cai, Z.G. (in press). Neural substrates associated with character amnesia in
+                           Chinese
+                           handwriting: An fNIRS study. <em>Journal of Cognitive Neuroscience.</em></li>
+                        <li><b>09 December 2024.</b> Our lab has a paper accepted for publication. Haslett, D. A., &
+                           Cai,
+                           Z.
+                           G. (in press). How much semantic information is available in large language model tokens?
+                           <em>Transactions of the Association for Computational Linguistics.</em>
+                        </li>
+                        <li><b>12 November 2024.</b> Lab member Zhenguang Cai has a paper accepted. Riemer, M. & Cai, Z.
+                           G.
+                           (in press). Space-time interference: The asymmetry we get out is the asymmetry we put in.
+                           <em>Neuroscience and Biobehavioral Reviews.</em>
+                        </li>
+                        <li><b>15 October 2024.</b> Former lab member Zhuang Qiu has a paper accepted as an oral
+                           presentation
+                           at the 38th Pacific Asia Conference on Language, Information, and Computation, PACLIC 38
+                           (2024),
+                           to
+                           be held on December 7-9, 2024, at the Tokyo University of Foreign Studies (TUFS), Japan </li>
+                        <li><b>15 October 2024.</b> Our lab has a paper accepted. Duan, X., Li, S., & Cai, Z. G. (in
+                           press).
+                           MacBehaviour: An R package for behavioural experimentation on large language models.
+                           <em>Behavior
+                              Research Methods.</em>
+                        </li>
+                        <li><b>26 August 2024.</b> Lab member Xufeng presented a talk "Humanlike language use in LLMs"
+                           at
+                           CogSci Meetup at HKUST.</li>
+                        <li><b>25 July 2024.</b> Lab member Xufeng has a paper "The Neural Basis of Decline in Written
+                           Production: Evidence from Chinese Handwriting" accepted as a slide (oral) presentation at the
+                           annual meeting of Society for the Neurobiology of Language at Brisbane in Australia. </li>
+                        <li><b>19 July 2024.</b> Our lab has a book chapter accepted. Duan, X., & Cai, Z. G. (in press).
+                           Chinese character processing. <em>Oxford Research Encyclopedia of Linguistics</em> </li>
+                        <li><b>25 June 2024.</b> Our lab has a paper accepted. Wu, H., Duan, X., & Cai, Z. G. (in
+                           press).
+                           Speaker demographics modulate listeners' neural correlates of spoken word processing.
+                           <em>Journal
+                              of Cognitive Neuroscience.</em>
+                        </li>
+                        <li><b>11 June 2024.</b> Many congratulations to Dr David Haslett for his successful PhD viva!
+                        </li>
+                        <li><b>10 June 2024.</b> Our lab has a paper accepted. Gao, R., Lin, Y., Zhao, N., & Cai, Z. G.
+                           (in
+                           press). Machine translation of Chinese classical poetry: A comparison among ChatGPT, Google
+                           Translate and DeepL Translator. <em>Humanities and Social Sciences Communications.</em> </li>
+                        <li><b>04 June 2024.</b> Our lab has a paper accepted. Haslett, D. A., & Cai, Z. G. (in press).
+                           Wayward associations: When and why people think of similar-sounding words. <em>Journal of
+                              Memory
+                              and Language.</em> </li>
+                        <li><b>04 April 2024.</b> The lab held a wonderful social gathering with a roof-top barbecue; <a
+                              href="https://doi.org/10.31234/osf.io/ywtfd" target="_blank">photos here. </a> </li>
+                        <li><b>27 February 2024.</b> Our lab has a paper accepted. Xu, Z., Mittal, P. S., Ahmed, M. M.,
+                           Adak,
+                           C., & Cai, Z. G. (in press). Assessing penmanship of Chinese handwriting: A deep
+                           learning-based
+                           approach. <em>Reading and Writing.</em> </li>
+                        <li><b>01 February 2024. </b>Yang, T., Cai, Z.G., Lin, W., & Wang, R. (in press).
+                           Modality-general
+                           and
+                           modality-specific control mechanisms in bilingual spoken and written productions.
+                           <em>Bilingualism:
+                              Language and Cognition.</em>
+                        </li>
+                        <li><b>01 February 2024.</b> Many congratulations to Dr Max Dunn for his successful PhD viva!
+                        </li>
+                        <li><b>29 January 2024.</b> Our lab has a paper accepted. Yang, T., Cai, Z.G., Lin, W., & Wang,
+                           R.
+                           (in
+                           press). Modality-general and modality-specific control mechanisms in bilingual spoken and
+                           written
+                           productions. <em>Bilingualism: Language and Cognition.</em></li>
+                        <li><b>23 December 2023.</b> Our lab has a paper accepted. Cai, Z.G., & Zhao, N. (in press).
+                           Structural priming: An experimental paradigm for mapping linguistic representations.
+                           <em>Language
+                              and Linguistics Compass.</em>
+                        </li>
+                        <li><b>09 December 2023.</b> Our lab has a paper accepted. Langsford, S., Xu, Z., & Cai, Z.G.
+                           (in
+                           press). Constructing a 30-item test for character amnesia in Chinese. <em>Reading and
+                              Writing</em>
+                        </li>
+                        <li><b>03 December 2023.</b> Our lab has successfully organised <a
+                              href="https://ling.cuhk.edu.hk/amlap.asia/" target="_blank">AMLaP Asia</a>. Many thanks to
+                           all
+                           the lab members, without whom this conference would not have been successful. Special thanks
+                           go
+                           to
+                           Yichi, Hanlin, and Bei. </li>
+                        <li><b>24 November 2023.</b> Our lab has published an R package called MacBehaviour for
+                           collecting
+                           data from large language models. Well done, Xufeng and Shixuan! Duan, X., Li, S., & Cai, Z.
+                           G.
+                           (2023, November 24). <em>MacBehaviour: An R package for behavioural experimentation on large
+                              language models.</em> Retrieved from https://doi.org/10.31234/osf.io/ywtfd. <a
+                              href="https://doi.org/10.31234/osf.io/ywtfd" target="_blank">LINK</a> </li>
+                        <li><b>23 November 2023.</b> Our lab has a paper accepted. Thierfelder, P., Cai, Z. G., Huang,
+                           S.,
+                           &
+                           Lin, H. (in press). The Chinese lexicon of deaf readers: A database of character decisions
+                           and a
+                           comparison between deaf and hearing readers. <em>Behavior Research Methods.</em></li>
+                        <li><b>23 September 2023.</b> Dave has published a third paper - many congrats. Haslett, D.A., &
+                           Cai,
+                           Z.G. (in press). Systematic mappings of sound to meaning: A theoretical review.
+                           <em>Psychonomic
+                              Bulletin & Review.</em>
+                        </li>
+                        <li><b>25 June 2023.</b> Our lab successfully organized <a
+                              href="http://ling.cuhk.edu.hk/conference/cogsci/" target="_blank"> the CogSci 2023 Hong
+                              Kong
+                              Meetup and Workshop</a>. Many thanks to Hanlin and Shuqi for organizing the event.</li>
+                        <li><b>22 May 2023.</b> Our lab has its first registered report accepted. Cai, Z. G., Dunn, M.
+                           S.,
+                           &
+                           Branigan. H. P. (acceptance in principle). How do speakers tailor lexical choices according
+                           to
+                           their interlocutor's accent? <em>Journal of Experimental Psychology: Learning, Memory, and
+                              Cognition.</em></li>
+                        <li><b>13 March 2023.</b> Our lab member Yichi Zhang was offered a PhD position in the
+                           department.
+                           She
+                           will continue in the lab as a PhD student starting from August 2023. Many congrats to Yichi.
+                        </li>
+                        <li><b>16 Februrary 2023.</b> Our lab has a paper accepted. Haslett, D.A., & Cai, Z.G. (in
+                           press).
+                           Similar-sounding words flesh out fuzzy meanings. <em>Journal of Experimental Psychology:
+                              General.</em> Many congrats to Dave! </li>
+                        <li><b>15 November 2022.</b> The lab had a <a
+                              href="https://raw.githubusercontent.com/cuhklpl/cuhklpl.github.io/master/thumbs/gathering.jpg"
+                              target="_blank"> social gathering </a> at the New Asian Noodle Bar. We welcomed new lab
+                           members
+                           Harvy Qiu (postdoc) and Yifei Hu (RA).</li>
+                        <li><b>26 September 2022.</b> Our lab has a paper accepted. Cai, Z. G., Zhao, N., Lin, H., Xu,
+                           Z.,
+                           &
+                           Thierfelder, P. (in press). Syntactic encoding in written language production by deaf
+                           writers: A
+                           structural priming study and a comparison with hearing writers. <em>Journal of Experimental
+                              Psychology: Learning, Memory and Cognition.</em></li>
+                        <li><b>18 August 2022.</b> Our lab was successful in obtaining an Academic Equipment Grant to
+                           purchase
+                           a combined TMS-EEG system.</li>
+                        <li><b>30 June 2022.</b> Our lab was successful in obtaining a GRF grant (with Z. Cai as the
+                           PI);
+                           the
+                           project title is: Neurocognitive mechanisms of character amnesia in Chinese handwriting.</li>
+                        <li><b>04 May 2022.</b> Our lab has a paper accepted. Cai, Z.G., Wu, L., Liu, H., & Wang, R. (in
+                           press). Cross-dimensional magnitude interactions reflect statistical correlations among
+                           physical
+                           dimensions: Evidence from space-time interaction. <em>Acta Psychologica.</em></li>
+                        <li><b>04 April 2022.</b> Our lab was successful in obtaining a CUHK RPg Place for Development
+                           of
+                           Strategic Areas and the place will be used on Zebo Xu (currently a research assistant in the
+                           lab).
+                           Congrats to Zebo.</li>
+                        <li><b>16 March 2022.</b> Our lab has a paper accepted. Cai, Z.G., Zhao, N., & Pickering, M.J.
+                           (in
+                           press). How do people interpret implausible sentences? <em>Cognition.</em></li>
+                        <li><b>28 December 2021. </b>Our lab has a paper accepted. Cai, Z.G. (in press). Interlocutor
+                           modelling in comprehending speech from interleaved interlocutors of different dialectic
+                           backgrounds. <em>Psychonomic Bulletin & Review.</em></li>
+                        <li><b>18 November 2021.</b>Our lab has a paper accepted. Zhao, N., Chen, X., & Cai, Z.G. (in
+                           press).
+                           Planning ahead: Interpreters predict source language in consecutive interpreting.
+                           <em>Bilingualism:
+                              Language and Cognition.</em>
+                        </li>
+                        <li><b>11 November 2021.</b>Many congratulations to Dave for having the following paper
+                           published!
+                           Great work! Haslett, D.A., & Cai, Z.G. (in press). New neighbours make bad fences: Form-based
+                           semantic shifts in word learning. <em>Psychonomic Bulletin & Review.</em></li>
+                        <li><b>30 September 2021.</b>Lab members finally had the barbecue that was long delayed from two
+                           years
+                           ago! We are also happy to see the lab expanded with the addition of Steven (as a postdoc),
+                           Tania
+                           (as a research associate), and Zebo (as a research assistant).</li>
+                        <li><b>29 June 2021.</b>Our lab has a new paper accepted: Cai, Z.G., Sun, Z., & Zhao, N.(in
+                           press).
+                           Interlocutor modelling in lexical alignment: The role of linguistic competence. <em>Journal
+                              of
+                              Memory and Language.</em></li>
+                        <li><b>28 June 2021.</b>Our lab has secured a teaching grant: Virtual behavioral research for
+                           humanities and social sciences (funding source: Funding Scheme for Virtual Teaching and
+                           Learning,
+                           The Chinese University of Hong Kong). </li>
+                        <li><b>17 May 2021.</b>Our lab has a new paper accepted (and congratulations to Shuting and
+                           Zebo):
+                           Cai, Z.G., Huang, S., Xu, Z., & Zhao, N.(in press). Objective ages of acquisition for 3300+
+                           simplified Chinese characters. <em>Behavior Research Methods.</em></li>
+                        <li><b>13 April 2021.</b> Shuqi Wang, who is currently doing her MA research at Peking
+                           University,
+                           was
+                           awarded the prestigous Hong Kong PhD fellowship to do a PhD in the lab. We look forward to
+                           having
+                           her here in September.</li>
+                        <li><b>06 April 2021.</b> Our lab is part of a many-lab replication of the action-sentence
+                           compatibility effect, which was accepted to appear in <em>Psychonomic Bulletin & Review.
+                           </em>
+                        </li>
+                        <li><b>23 March 2021.</b> Our lab has a new paper accepted (and congratulations to Shuting):
+                           Huang,
+                           S., Zhou, Y., Du, M., Wang, R., & Cai, Z.G. (in press). Character amnesia in Chinese
+                           handwriting: A
+                           mega-study analysis. <em>Language Sciences.</em></li>
+                        <li><b>9 February 2021.</b> Our lab has a new paper accepted (and congratulations to Shuting):
+                           Huang,
+                           S., Lin, W., Xu, M., Wang, R., & Cai, Z.G. (in press). On the tip of the pen: Effects of
+                           character-level lexical variables and handwriter-level individual differences on orthographic
+                           retrieval difficulties in Chinese handwriting. <em>Quarterly Journal of Experimental
+                              Psychology.</em></li>
+                        <li><b>24 December 2020.</b> Our lab has a new paper accepted: Cai, Z.G., & Wang, R. (in press).
+                           Cross-dimensional magnitude interaction is modulated by representational noise: Evidence from
+                           space-time interaction. <em>Psychological Research.</em></li>
+                        <li><b>19 August 2020.</b> Many congratulations to Xiaocong (a research asscociate in the lab),
+                           who
+                           was awarded a postdoc fellowship at the Hong Kong Polytechnic University. Well done!</li>
+                        <li><b>18 August 2020.</b> Many congratulations to Tianyi (an MA student in the lab), who has
+                           got a
+                           research assistant job at the Hong Kong Polytechnic University. Well done!</li>
+                        <li><b>30 June 2020.</b> The lab was succcessful at obtaining a GRF grant to investigate the
+                           project
+                           "Rational interlocutor modelling in language comprehension and production".</li>
+                        <li><b>28 May 2020.</b> Yufeng Wu, who is currently finishing his MA degree in the lab, was
+                           made,
+                           and
+                           accepted, an offer of a research assistant position at the University of Macau.</li>
+                        <li><b>12 May 2020.</b> Our lab has a new paper accepted: Wang, M., Cai, Z.G., Wang, R.,
+                           Branigan,
+                           H.P., & Pickering, M.J. (in presss). How do phonology and orthography feedback to influence
+                           syntactic encoding in language production? Evidence from structural priming in Mandarin.
+                           <em>Quarterly Journal of Experimental Psychology.</em>
+                        </li>
+                        <li><b>15 April 2020.</b> Dave Haslett, a past MA student in the lab, was offered a Hong Kong
+                           PhD
+                           fellowship to do his PhD research in the lab. Xufeng Duan, a current MA student in the lab,
+                           was
+                           offered a studentship to do his PhD research in the lab.</li>
+                     </ol>
                   </div>
                </div>
             </div>
-         </div>
-         <hr>
-         <div class="container-fluid">
-            <div class="row-fluid marketing">
-               <div class="span12">
-                  <p>
-                     The Language Processing Lab is based in <a href="http://ling.cuhk.edu.hk/" target="_blank">Department of Linguistics and Modern Languages</a> and <a href="http://bmi.cuhk.edu.hk/" target="_blank">Brain and Mind Institute</a>, The Chinese University of Hong Kong. 
-					 We are interested in language comprehension, production and learning. The lab has the following foci in research,among others. 
-                  </p>				  
-				  <ol>
-		<li><b>Language comprehension and production </b> (e.g., How people take their interlocutor into account in comprehending and producing language)</li>
-		<li><b>Handwriting literacy </b> (e.g., Chinese handwriting literacy: deep-learning-based diagnosis and neurocognitive mechanisms) </li>
-		<li><b>Explainable AI/machine behaviours</b> (e.g., Do large language models resemble humans in language use?) </li>
-		
-							  
-				  </ol>
- <h4>JOINING THE LAB</h4>
-				  <ol>
-<li><b>Positions available </b>The lab is looking for a postdoc or research assistant with good experience in fMRI, Bayesian modelling, or machine learning. If you have such skills, please send your CV to zhenguangcai(at)cuhk.edu.hk.</li>
-<li><b>PhD application </b>The lab has been successful in obtaining three <a href="https://cerg1.ugc.edu.hk/hkpfs/index.html" target="_blank">Hong Kong PhD Fellowships</a> and a couple of CUHK scholarships, apart from some departmental studentships. If you want to do a PhD at the lab (and in the Department of Linguistics and Modern Languages), please send us an email. We are only interested in applicants with a strong empirical/computational background.</li>
-				  </ol>
+            <footer id="footer">
+               <div class="container-fluid">
+               </div>
+            </footer>
 
-<h4>NEWS IN THE LAB</h4>
-				  <ol>
-		<li><b></b>24 May 2025.</b> Our lab has a paper accepted. Xiao, B., Duan, X., Haslett, D. A., & Cai, Z. G. (in press). Human-likeness of LLMs in the Mental Lexicon. <em>Conference on Computational Natural Language Learning </em>.</li>
-		<li><b>27 April 2025.</b> Our lab has a paper accepted. Xu, Z., Zhang, Y., & Cai, Z. G. (in press). Phonetic and semantic radical priming in Chinese character amnesia. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition </em>. </li>
-		<li><b>25 April 2025.</b> Many congratulations to Dr Hanlin Wu for his successful PhD viva!</li>
-		<li><b>23 April 2025.</b> Many congratulations to Dr Xufeng Duan for his successful PhD viva!</li>
-		<li><b>22 April 2025. </b>Our lab has a paper accepted for publication. Qiu, Z., Duan, X. & Cai, Z. G. (in press). Grammaticality representation in ChatGPT as compared to linguists and laypeople. <em>Humanities and Social Sciences Communications</em>. </li>
-		<li><b>13 April 2025. </b>Our lab has a paper accepted for publication. Xu, Z., Yang, Y., Yuan, T., Feng, G., & Cai, Z.G. (in press). Neural substrates associated with character amnesia in Chinese handwriting: An fNIRS study. <em>Journal of Cognitive Neuroscience</em>.</li>
-<li><b>09 December 2024.</b> Our lab has a paper accepted for publication. Haslett, D. A., & Cai, Z. G. (in press). How much semantic information is available in large language model tokens? <em>Transactions of the Association for Computational Linguistics</em>.</li>
-<li><b>12 November 2024.</b> Lab member Zhenguang Cai has a paper accepted. Riemer, M. & Cai, Z. G. (in press). Space-time interference: The asymmetry we get out is the asymmetry we put in. <em>Neuroscience and Biobehavioral Reviews</em>.</li>
-<li><b>15 October 2024.</b> Former lab member Zhuang Qiu has a paper accepted as an oral presentation at the 38th Pacific Asia Conference on Language, Information, and Computation, PACLIC 38 (2024), to be held on December 7-9, 2024, at the Tokyo University of Foreign Studies (TUFS), Japan </li>
-<li><b>15 October 2024.</b> Our lab has a paper accepted. Duan, X., Li, S., & Cai, Z. G. (in press). MacBehaviour: An R package for behavioural experimentation on large language models. <em>Behavior Research Methods</em>.</li>
-<li><b>26 August 2024.</b> Lab member Xufeng presented a talk "Humanlike language use in LLMs" at CogSci Meetup at HKUST.</li>
-<li><b>25 July 2024.</b> Lab member Xufeng has a paper "The Neural Basis of Decline in Written Production: Evidence from Chinese Handwriting" accepted as a slide (oral) presentation at the annual meeting of Society for the Neurobiology of Language at Brisbane in Australia. </li>
-<li><b>19 July 2024.</b> Our lab has a book chapter accepted. Duan, X., & Cai, Z. G. (in press). Chinese character processing. <em>Oxford Research Encyclopedia of Linguistics</em> </li>
-<li><b>25 June 2024.</b> Our lab has a paper accepted. Wu, H., Duan, X., & Cai, Z. G. (in press). Speaker demographics modulate listeners' neural correlates of spoken word processing. <em>Journal of Cognitive Neuroscience.</em> </li>
-<li><b>11 June 2024.</b> Many congratulations to Dr David Haslett for his successful PhD viva!</li>
-					  <li><b>10 June 2024.</b> Our lab has a paper accepted. Gao, R., Lin, Y., Zhao, N., & Cai, Z. G. (in press). Machine translation of Chinese classical poetry: A comparison among ChatGPT, Google Translate and DeepL Translator. <em>Humanities and Social Sciences Communications.</em> </li>
-					  <li><b>04 June 2024.</b> Our lab has a paper accepted. Haslett, D. A., & Cai, Z. G. (in press). Wayward associations: When and why people think of similar-sounding words. <em>Journal of Memory and Language.</em> </li>
-<li><b>04 April 2024.</b> The lab held a wonderful social gathering with a roof-top barbecue; <a href="https://doi.org/10.31234/osf.io/ywtfd" target="_blank">photos here. </a> </li>
-<li><b>27 February 2024.</b> Our lab has a paper accepted. Xu, Z., Mittal, P. S., Ahmed, M. M., Adak, C., & Cai, Z. G. (in press). Assessing penmanship of Chinese handwriting: A deep learning-based approach. <em>Reading and Writing.</em> </li>
-<li><b>01 February 2024. </b>Yang, T., Cai, Z.G., Lin, W., & Wang, R. (in press). Modality-general and modality-specific control mechanisms in bilingual spoken and written productions. <em>Bilingualism: Language and Cognition</em>.</li>
-<li><b>01 February 2024.</b> Many congratulations to Dr Max Dunn for his successful PhD viva!</li>
-<li><b>29 January 2024.</b> Our lab has a paper accepted. Yang, T., Cai, Z.G., Lin, W., & Wang, R. (in press). Modality-general and modality-specific control mechanisms in bilingual spoken and written productions. <em>Bilingualism: Language and Cognition</em>.</li>
-<li><b>23 December 2023.</b> Our lab has a paper accepted. Cai, Z.G., & Zhao, N. (in press). Structural priming: An experimental paradigm for mapping linguistic representations. <em>Language and Linguistics Compass.</em> </li>
-<li><b>09 December 2023.</b> Our lab has a paper accepted. Langsford, S., Xu, Z., & Cai, Z.G. (in press). Constructing a 30-item test for character amnesia in Chinese. <em>Reading and Writing</em> </li>
-<li><b>03 December 2023.</b> Our lab has successfully organised <a href="https://ling.cuhk.edu.hk/amlap.asia/" target="_blank">AMLaP Asia</a>. Many thanks to all the lab members, without whom this conference would not have been successful. Special thanks go to Yichi, Hanlin, and Bei. </li>
-<li><b>24 November 2023.</b> Our lab has published an R package called MacBehaviour for collecting data from large language models. Well done, Xufeng and Shixuan! Duan, X., Li, S., & Cai, Z. G. (2023, November 24). <em>MacBehaviour: An R package for behavioural experimentation on large language models</em>. Retrieved from https://doi.org/10.31234/osf.io/ywtfd. <a href="https://doi.org/10.31234/osf.io/ywtfd" target="_blank">LINK</a> </li>
-<li><b>23 November 2023.</b> Our lab has a paper accepted. Thierfelder, P., Cai, Z. G., Huang, S., & Lin, H. (in press). The Chinese lexicon of deaf readers: A database of character decisions and a comparison between deaf and hearing readers. <em>Behavior Research Methods</em>.</li>
-<li><b>23 September 2023.</b> Dave has published a third paper - many congrats. Haslett, D.A., & Cai, Z.G. (in press). Systematic mappings of sound to meaning: A theoretical review. <em>Psychonomic Bulletin & Review</em>.</li>
-<li><b>25 June 2023.</b> Our lab successfully organized <a href="http://ling.cuhk.edu.hk/conference/cogsci/" target="_blank"> the CogSci 2023 Hong Kong Meetup and Workshop</a>. Many thanks to Hanlin and Shuqi for organizing the event.</li>
-<li><b>22 May 2023.</b> Our lab has its first registered report accepted. Cai, Z. G., Dunn, M. S., & Branigan. H. P. (acceptance in principle). How do speakers tailor lexical choices according to their interlocutor’s accent? <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>.</li>
-<li><b>13 March 2023.</b> Our lab member Yichi Zhang was offered a PhD position in the department. She will continue in the lab as a PhD student starting from August 2023. Many congrats to Yichi. </li>
-<li><b>16 Februrary 2023.</b> Our lab has a paper accepted. Haslett, D.A., & Cai, Z.G. (in press). Similar-sounding words flesh out fuzzy meanings. <em>Journal of Experimental Psychology: General</em>. Many congrats to Dave! </li>
-<li><b>15 November 2022.</b> The lab had a <a href="https://raw.githubusercontent.com/cuhklpl/cuhklpl.github.io/master/thumbs/gathering.jpg" target="_blank"> social gathering </a> at the New Asian Noodle Bar. We welcomed new lab members Harvy Qiu (postdoc) and Yifei Hu (RA).</li>
-<li><b>26 September 2022.</b> Our lab has a paper accepted. Cai, Z. G., Zhao, N., Lin, H., Xu, Z., & Thierfelder, P. (in press). Syntactic encoding in written language production by deaf writers: A structural priming study and a comparison with hearing writers. <em>Journal of Experimental Psychology: Learning, Memory and Cognition</em>.</li>
-<li><b>18 August 2022.</b> Our lab was successful in obtaining an Academic Equipment Grant to purchase a combined TMS-EEG system.</li>
-<li><b>30 June 2022.</b> Our lab was successful in obtaining a GRF grant (with Z. Cai as the PI); the project title is: Neurocognitive mechanisms of character amnesia in Chinese handwriting.</li>
-<li><b>04 May 2022.</b> Our lab has a paper accepted. Cai, Z.G., Wu, L., Liu, H., & Wang, R. (in press). Cross-dimensional magnitude interactions reflect statistical correlations among physical dimensions: Evidence from space-time interaction. <em>Acta Psychologica</em>.</li>
-<li><b>04 April 2022.</b> Our lab was successful in obtaining a CUHK RPg Place for Development of Strategic Areas and the place will be used on Zebo Xu (currently a research assistant in the lab). Congrats to Zebo.</li>
-<li><b>16 March 2022.</b> Our lab has a paper accepted. Cai, Z.G., Zhao, N., & Pickering, M.J. (in press). How do people interpret implausible sentences? <em>Cognition</em>.</li>
-<li><b>28 December 2021. </b>Our lab has a paper accepted. Cai, Z.G. (in press). Interlocutor modelling in comprehending speech from interleaved interlocutors of different dialectic backgrounds. <em>Psychonomic Bulletin & Review</em>.</li>
-<li><b>18 November 2021.</b>Our lab has a paper accepted. Zhao, N., Chen, X., & Cai, Z.G. (in press). Planning ahead: Interpreters predict source language in consecutive interpreting. <em>Bilingualism: Language and Cognition</em>.</li>
-<li><b>11 November 2021.</b>Many congratulations to Dave for having the following paper published! Great work! Haslett, D.A., & Cai, Z.G. (in press). New neighbours make bad fences: Form-based semantic shifts in word learning. <em>Psychonomic Bulletin & Review</em>.</li>
-<li><b>30 September 2021.</b>Lab members finally had the barbecue that was long delayed from two years ago! We are also happy to see the lab expanded with the addition of Steven (as a postdoc), Tania (as a research associate), and Zebo (as a research assistant).</li>
-<li><b>29 June 2021.</b>Our lab has a new paper accepted: Cai, Z.G., Sun, Z., & Zhao, N.(in press). Interlocutor modelling in lexical alignment: The role of linguistic competence. <em>Journal of Memory and Language.</em></li>
-<li><b>28 June 2021.</b>Our lab has secured a teaching grant: Virtual behavioral research for humanities and social sciences (funding source: Funding Scheme for Virtual Teaching and Learning, The Chinese University of Hong Kong). </li>
-<li><b>17 May 2021.</b>Our lab has a new paper accepted (and congratulations to Shuting and Zebo): Cai, Z.G., Huang, S., Xu, Z., & Zhao, N.(in press). Objective ages of acquisition for 3300+ simplified Chinese characters. <em>Behavior Research Methods.</em></li>
-<li><b>13 April 2021.</b> Shuqi Wang, who is currently doing her MA research at Peking University, was awarded the prestigous Hong Kong PhD fellowship to do a PhD in the lab. We look forward to having her here in September.</li>
-<li><b>06 April 2021.</b> Our lab is part of a many-lab replication of the action-sentence compatibility effect, which was accepted to appear in <em>Psychonomic Bulletin & Review. </em></li>
-<li><b>23 March 2021.</b> Our lab has a new paper accepted (and congratulations to Shuting): Huang, S., Zhou, Y., Du, M., Wang, R., & Cai, Z.G. (in press). Character amnesia in Chinese handwriting: A mega-study analysis. <em>Language Sciences.</em></li>
-<li><b>9 February 2021.</b> Our lab has a new paper accepted (and congratulations to Shuting): Huang, S., Lin, W., Xu, M., Wang, R., & Cai, Z.G. (in press). On the tip of the pen: Effects of character-level lexical variables and handwriter-level individual differences on orthographic retrieval difficulties in Chinese handwriting. <em>Quarterly Journal of Experimental Psychology.</em></li>
-<li><b>24 December 2020.</b> Our lab has a new paper accepted: Cai, Z.G., & Wang, R. (in press). Cross-dimensional magnitude interaction is modulated by representational noise: Evidence from space-time interaction. <em>Psychological Research.</em></li>
-<li><b>19 August 2020.</b> Many congratulations to Xiaocong (a research asscociate in the lab), who was awarded a postdoc fellowship at the Hong Kong Polytechnic University. Well done!</li>
-<li><b>18 August 2020.</b> Many congratulations to Tianyi (an MA student in the lab), who has got a research assistant job at the Hong Kong Polytechnic University. Well done!</li>
-<li><b>30 June 2020.</b> The lab was succcessful at obtaining a GRF grant to investigate the project "Rational interlocutor modelling in language comprehension and production".</li>
-<li><b>28 May 2020.</b> Yufeng Wu, who is currently finishing his MA degree in the lab, was made, and accepted, an offer of a research assistant position at the University of Macau.</li>
-<li><b>12 May 2020.</b> Our lab has a new paper accepted: Wang, M., Cai, Z.G., Wang, R., Branigan, H.P., & Pickering, M.J. (in presss). How do phonology and orthography feedback to influence syntactic encoding in language production? Evidence from structural priming in Mandarin. <em>Quarterly Journal of Experimental Psychology</em>.</li>
-<li><b>15 April 2020.</b> Dave Haslett, a past MA student in the lab, was offered a Hong Kong PhD fellowship to do his PhD research in the lab. Xufeng Duan, a current MA student in the lab, was offered a studentship to do his PhD research in the lab.</li>
-				  </ol>
-</div>				
-      <footer id="footer">
-         <div class="container-fluid">
-         </div>  
-      </footer>
+            <!-- Javascript files -->
+            <script src="js/jquery-1.9.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script> $('#main-carousel').carousel(); </script>
 
-      <!-- Javascript files -->
-      <script src="js/jquery-1.9.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script> $('#main-carousel').carousel(); </script>
-   </body>
+            <script>
+               document.addEventListener('DOMContentLoaded', function () {
+                  const container = document.querySelector('.carousel-container');
+                  const slides = document.querySelectorAll('.carousel-slide');
+                  let currentSlide = 0;
+
+                  function nextSlide() {
+                     currentSlide = (currentSlide + 1) % slides.length;
+                     container.style.transform = `translateX(-${currentSlide * 100}%)`;
+                  }
+
+                  // 每5秒切换一次图片
+                  setInterval(nextSlide, 5000);
+               });
+            </script>
+</body>
+
 </html>
