@@ -898,10 +898,9 @@ ul.sponsors {
 #researchstaff .span3 img,
 #graduate .span3 img {
 	width: 132px;
-	height: 132px;
+	height: auto;
 	max-width: 100%;
-	object-fit: cover;
-	object-position: center top;
+	object-fit: contain;
 	border-radius: var(--radius);
 	display: block;
 	background: var(--soft);
@@ -1061,7 +1060,7 @@ li.publication:last-child {
 	#researchstaff .span3 img,
 	#graduate .span3 img {
 		width: 112px;
-		height: 112px;
+		height: auto;
 		margin-bottom: 10px;
 	}
 
