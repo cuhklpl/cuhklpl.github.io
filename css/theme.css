@@ -687,6 +687,8 @@ ul.sponsors {
 	border-bottom: none;
 }
 
+.marketing .home-foci li b,
+.marketing .home-join ol li b,
 .marketing .span12 > ol li b {
 	display: block;
 	color: var(--heading);
@@ -1016,16 +1018,225 @@ li.publication:last-child {
 	border-bottom: none;
 }
 
-/* Home carousel polish (works with inline styles) */
+/* Home layout */
+.home-hero-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(240px, 400px);
+	gap: 28px 36px;
+	align-items: start;
+	margin: 4px 0 8px;
+}
+
+.home-copy {
+	min-width: 0;
+}
+
+.home-copy .home-intro {
+	margin-top: 4px;
+}
+
+.home-join {
+	margin-top: 8px;
+}
+
+.home-join h4 {
+	border-top: none;
+	padding-top: 0;
+	margin-top: 12px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.js-gsap .navbar .navbar-inner {
+	position: relative;
+}
+
+.js-gsap .navbar .nav li a,
+.js-gsap .navbar .nav li a:hover,
+.js-gsap .navbar .nav li.active a {
+	border-bottom-color: transparent;
+}
+
+.nav-indicator {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 2px;
+	width: 0;
+	background: var(--accent);
+	pointer-events: none;
+	border-radius: 2px 2px 0 0;
+	will-change: transform, width;
+}
+
+.js-gsap #overview img,
+.js-gsap .navbar .nav li,
+.js-gsap .home-intro,
+.js-gsap .home-foci > li,
+.js-gsap .image-carousel,
+.js-gsap .home-join,
+.js-gsap .news-card {
+	visibility: hidden;
+}
+
+/* Home carousel */
 .image-carousel {
-	margin: 24px 0 8px !important;
-	max-width: 440px !important;
+	width: 100%;
+	max-width: none;
+	margin: 4px 0 0;
+	position: relative;
+}
+
+.carousel-viewport {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow);
+	background: var(--soft);
+}
+
+.carousel-container {
+	position: absolute;
+	inset: 0;
+}
+
+.carousel-slide {
+	position: absolute;
+	inset: 0;
+	margin: 0;
+	min-width: 0;
+	opacity: 0;
+	z-index: 0;
+}
+
+.carousel-slide:first-child {
+	opacity: 1;
+	z-index: 1;
 }
 
 .carousel-slide img {
-	border-radius: var(--radius) !important;
-	box-shadow: var(--shadow) !important;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+	box-shadow: none;
+	border: 0;
+	transform-origin: center center;
+}
+
+.carousel-controls {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-top: 10px;
+}
+
+.carousel-btn {
+	width: 32px;
+	height: 32px;
 	border: 1px solid var(--border);
+	background: var(--surface);
+	color: var(--heading);
+	border-radius: 50%;
+	font-size: 1.35rem;
+	line-height: 1;
+	padding: 0;
+	cursor: pointer;
+	appearance: none;
+	-webkit-appearance: none;
+	transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus {
+	background: var(--soft);
+	border-color: var(--accent);
+	color: var(--accent);
+	outline: none;
+}
+
+.carousel-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	flex: 1;
+}
+
+.carousel-dot {
+	width: 8px;
+	height: 8px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: var(--border);
+	cursor: pointer;
+	transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.carousel-dot.is-active {
+	background: var(--accent);
+	transform: scale(1.25);
+}
+
+.carousel-progress {
+	height: 2px;
+	margin-top: 8px;
+	background: var(--border);
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.carousel-progress span {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: var(--accent);
+	transform: scaleX(0);
+	transform-origin: left center;
+}
+
+@media screen and (max-width: 767px) {
+	.home-hero-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.image-carousel {
+		max-width: 100%;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.js-gsap #overview img,
+	.js-gsap .navbar .nav li,
+	.js-gsap .home-intro,
+	.js-gsap .home-foci > li,
+	.js-gsap .image-carousel,
+	.js-gsap .home-join,
+	.js-gsap .news-card {
+		visibility: visible;
+	}
+
+	.carousel-progress span,
+	.nav-indicator {
+		transition: none;
+	}
 }
 
 @media screen and (max-width: 767px) {

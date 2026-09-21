@@ -16,48 +16,18 @@
    <link href="css/bootstrap.min.css" rel="stylesheet">
    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
    <link href="css/theme.css" rel="stylesheet">
-   <style>
-      ol {
-         display: block;
-         list-style-type: disc;
-         margin-top: 1em;
-         margin-bottom: 1em;
-         margin-left: 0;
-         margin-right: 0;
-         padding-left: 40px;
-      }
-
-      .image-carousel {
-         width: 100%;
-         max-width: 400px;
-         margin: 20px 0;
-         overflow: hidden;
-      }
-
-      .carousel-container {
-         display: flex;
-         transition: transform 0.5s ease-in-out;
-      }
-
-      .carousel-slide {
-         min-width: 100%;
-         box-sizing: border-box;
-      }
-
-      .carousel-slide img {
-         width: 100%;
-         height: auto;
-         object-fit: cover;
-         border-radius: 8px;
-         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-   </style>
+   <script>
+      document.documentElement.classList.add('js-gsap');
+      setTimeout(function () {
+         if (!window.__gsapHomeReady) document.documentElement.classList.remove('js-gsap');
+      }, 2500);
+   </script>
 </head>
 
 <body>
    <div class="container">
       <header id="overview">
-         <img alt="" src="images/lab_new.png">
+         <img alt="CUHK Language Processing Lab" src="images/lab_new.png">
       </header>
       <div class="masthead">
          <div class="navbar">
@@ -78,52 +48,59 @@
       <div class="container-fluid">
          <div class="row-fluid marketing">
             <div class="span12">
-               <br>
-               <p>
-                  The Language Processing Lab is based in <a href="http://ling.cuhk.edu.hk/" target="_blank">Department
-                     of Linguistics and Modern Languages</a> and <a href="http://bmi.cuhk.edu.hk/" target="_blank">Brain
-                     and Mind Institute</a>, The Chinese University of Hong Kong. We are interested in the neural and cognitive processes underlying language production and comprehension
-                  in both humans and large language models. In particular, we focus on the following areas of research:
-               </p>
-               <ol>
-                  <li><b>Interlocutor modelling in language communication</b> (e.g., How people take their interlocutor into
-                     account in comprehending and producing language)</li>
-                  <li><b>Handwriting literacy</b> (e.g., What are the neurocognitive mechanisms of handwriting and dysgraphia?) </li>
-                  <li><b>Mechanistic interpretability of AI</b> (e.g., What are the neurons and circuits responsible for language use in LLMs) </li>
-               </ol>
+               <div class="home-hero-grid">
+                  <div class="home-copy">
+                     <p class="home-intro">
+                        The Language Processing Lab is based in <a href="http://ling.cuhk.edu.hk/" target="_blank">Department
+                           of Linguistics and Modern Languages</a> and <a href="http://bmi.cuhk.edu.hk/" target="_blank">Brain
+                           and Mind Institute</a>, The Chinese University of Hong Kong. We are interested in the neural and cognitive processes underlying language production and comprehension
+                        in both humans and large language models. In particular, we focus on the following areas of research:
+                     </p>
+                     <ol class="home-foci">
+                        <li><b>Interlocutor modelling in language communication</b> (e.g., How people take their interlocutor into
+                           account in comprehending and producing language)</li>
+                        <li><b>Handwriting literacy</b> (e.g., What are the neurocognitive mechanisms of handwriting and dysgraphia?) </li>
+                        <li><b>Mechanistic interpretability of AI</b> (e.g., What are the neurons and circuits responsible for language use in LLMs) </li>
+                     </ol>
+                  </div>
 
-               <div class="image-carousel">
-                  <div class="carousel-container">
-                     <div class="carousel-slide">
-                        <img src="images/xufeng_hanlin_cai.png" alt="Lab Image 0">
-                     </div>
-                     <div class="carousel-slide">
-                        <img src="images/xufeng_hanlin_viva.png" alt="Lab Image 1">
-                     </div>
-                     <div class="carousel-slide">
-                        <img src="images/yumeng_BBQ.png" alt="Lab Image 2">
-                     </div>
-                     <div class="carousel-slide">
-                        <img src="images/2022.png" alt="Lab Image 3">
+                  <div class="image-carousel">
+                     <div class="carousel-viewport">
+                        <div class="carousel-container">
+                           <div class="carousel-slide">
+                              <img src="images/xufeng_hanlin_cai.png" alt="Lab members at a gathering" width="1460" height="794" decoding="async">
+                           </div>
+                           <div class="carousel-slide">
+                              <img src="images/xufeng_hanlin_viva.png" alt="PhD viva celebration" width="1248" height="702" loading="lazy" decoding="async">
+                           </div>
+                           <div class="carousel-slide">
+                              <img src="images/yumeng_BBQ.png" alt="Lab barbecue gathering" width="1562" height="878" loading="lazy" decoding="async">
+                           </div>
+                           <div class="carousel-slide">
+                              <img src="images/2022.png" alt="Language Processing Lab group photo" width="1098" height="618" loading="lazy" decoding="async">
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
 
-               <h4>JOINING THE LAB</h4>
-               <ol>
-                  <li><b>Positions available </b>The lab is looking for a postdoc or research assistant with good
-                     experience in fMRI, Bayesian modelling, or machine learning. If you have such skills, please
-                     send
-                     your CV to zhenguangcai(at)cuhk.edu.hk.</li>
-                  <li><b>PhD application </b>The lab has been successful in obtaining three <a
-                        href="https://cerg1.ugc.edu.hk/hkpfs/index.html" target="_blank">Hong Kong PhD
-                        Fellowships</a>
-                     and a couple of CUHK scholarships, apart from some departmental studentships. If you want to do
-                     a
-                     PhD at the lab (and in the Department of Linguistics and Modern Languages), please send us an
-                     email. We are only interested in applicants with a strong empirical/computational background.
-                  </li>
-               </ol>
+               <section class="home-join" aria-labelledby="join-heading">
+                  <h4 id="join-heading">JOINING THE LAB</h4>
+                  <ol>
+                     <li><b>Positions available </b>The lab is looking for a postdoc or research assistant with good
+                        experience in fMRI, Bayesian modelling, or machine learning. If you have such skills, please
+                        send
+                        your CV to zhenguangcai(at)cuhk.edu.hk.</li>
+                     <li><b>PhD application </b>The lab has been successful in obtaining three <a
+                           href="https://cerg1.ugc.edu.hk/hkpfs/index.html" target="_blank">Hong Kong PhD
+                           Fellowships</a>
+                        and a couple of CUHK scholarships, apart from some departmental studentships. If you want to do
+                        a
+                        PhD at the lab (and in the Department of Linguistics and Modern Languages), please send us an
+                        email. We are only interested in applicants with a strong empirical/computational background.
+                     </li>
+                  </ol>
+               </section>
                <hr>
 
 
@@ -460,27 +437,13 @@
                <div class="container-fluid">
                </div>
             </footer>
+         </div>
+      </div>
+   </div>
 
-            <!-- Javascript files -->
-            <script src="js/jquery-1.9.1.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script> $('#main-carousel').carousel(); </script>
-
-            <script>
-               document.addEventListener('DOMContentLoaded', function () {
-                  const container = document.querySelector('.carousel-container');
-                  const slides = document.querySelectorAll('.carousel-slide');
-                  let currentSlide = 0;
-
-                  function nextSlide() {
-                     currentSlide = (currentSlide + 1) % slides.length;
-                     container.style.transform = `translateX(-${currentSlide * 100}%)`;
-                  }
-
-                  // 每5秒切换一次图片
-                  setInterval(nextSlide, 5000);
-               });
-            </script>
+   <script src="js/gsap.min.js"></script>
+   <script src="js/ScrollTrigger.min.js"></script>
+   <script src="js/home-gsap.js"></script>
 </body>
 
 </html>
