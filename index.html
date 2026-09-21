@@ -16,12 +16,9 @@
    <link href="css/bootstrap.min.css" rel="stylesheet">
    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
    <link href="css/theme.css" rel="stylesheet">
-   <script>
-      document.documentElement.classList.add('js-gsap');
-      setTimeout(function () {
-         if (!window.__gsapHomeReady) document.documentElement.classList.remove('js-gsap');
-      }, 2500);
-   </script>
+   <script src="js/gsap.min.js" defer></script>
+   <script src="js/ScrollTrigger.min.js" defer></script>
+   <script src="js/home-gsap.js" defer></script>
 </head>
 
 <body>
@@ -440,10 +437,6 @@
          </div>
       </div>
    </div>
-
-   <script src="js/gsap.min.js"></script>
-   <script src="js/ScrollTrigger.min.js"></script>
-   <script src="js/home-gsap.js"></script>
 </body>
 
 </html>

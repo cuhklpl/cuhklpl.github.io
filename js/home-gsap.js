@@ -5,7 +5,7 @@
   var reducedQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   function fallback() {
-    html.classList.remove('js-gsap');
+    html.classList.remove('gsap-on');
     html.classList.add('gsap-fallback');
   }
 
@@ -14,8 +14,16 @@
     return;
   }
 
-  window.__gsapHomeReady = true;
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.ticker.lagSmoothing(false);
+
+  try {
+    gsap.registerPlugin(ScrollTrigger);
+  } catch (err) {
+    fallback();
+    return;
+  }
+
+  html.classList.add('gsap-on');
 
   function prefersReduced() {
     return reducedQuery.matches;
@@ -297,17 +305,8 @@
       gsap.set([header, navItems, intro, foci, carousel, join, news], {
         clearProps: 'all'
       });
-      html.classList.remove('js-gsap');
       return;
     }
-
-    if (header) gsap.set(header, { autoAlpha: 0 });
-    if (navItems.length) gsap.set(navItems, { autoAlpha: 0 });
-    if (intro) gsap.set(intro, { autoAlpha: 0 });
-    if (foci.length) gsap.set(foci, { autoAlpha: 0 });
-    if (carousel) gsap.set(carousel, { autoAlpha: 0 });
-    if (join) gsap.set(join, { autoAlpha: 0 });
-    if (news) gsap.set(news, { autoAlpha: 0 });
 
     var tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
     if (header) {
@@ -338,38 +337,33 @@
 
     var joinBits = join ? gsap.utils.toArray(join.querySelectorAll('h4, li')) : [];
 
-    if (join) {
-      gsap.set(joinBits, { autoAlpha: 0, y: 16 });
-      ScrollTrigger.create({
-        trigger: join,
-        start: 'top 92%',
-        once: true,
-        onEnter: function () {
-          gsap.set(join, { autoAlpha: 1 });
-          gsap.to(joinBits, {
-            y: 0,
-            autoAlpha: 1,
-            duration: 0.5,
-            stagger: 0.1,
-            ease: 'power3.out',
-            overwrite: 'auto'
-          });
+    if (join && joinBits.length) {
+      gsap.from(joinBits, {
+        y: 16,
+        autoAlpha: 0,
+        duration: 0.5,
+        stagger: 0.1,
+        ease: 'power3.out',
+        immediateRender: false,
+        scrollTrigger: {
+          trigger: join,
+          start: 'top 92%',
+          once: true
         }
       });
     }
 
     if (news) {
-      gsap.fromTo(news, { y: 24, autoAlpha: 0 }, {
-        y: 0,
-        autoAlpha: 1,
-        duration: 0.6,
+      gsap.from(news, {
+        y: 20,
+        autoAlpha: 0,
+        duration: 0.55,
         ease: 'power3.out',
-        immediateRender: true,
+        immediateRender: false,
         scrollTrigger: {
           trigger: news,
           start: 'top 92%',
-          once: true,
-          toggleActions: 'play none none none'
+          once: true
         }
       });
     }
@@ -383,21 +377,22 @@
       });
     });
 
-    function revealIfInView() {
-      if (join && ScrollTrigger.isInViewport(join, 0.05) && gsap.getProperty(join, 'opacity') < 0.5) {
-        gsap.set(join, { autoAlpha: 1, y: 0 });
-        gsap.to(joinBits, { autoAlpha: 1, y: 0, duration: 0.45, stagger: 0.08, overwrite: 'auto' });
-      }
-      if (news && ScrollTrigger.isInViewport(news, 0.05) && gsap.getProperty(news, 'opacity') < 0.5) {
-        gsap.to(news, { autoAlpha: 1, y: 0, duration: 0.45, overwrite: 'auto' });
-      }
+    function forceReveal() {
+      var stuck = [header, intro, carousel, join, news].concat(navItems, foci, joinBits);
+      stuck.forEach(function (el) {
+        if (!el) return;
+        gsap.to(el, { autoAlpha: 1, y: 0, x: 0, duration: 0.2, overwrite: 'auto' });
+      });
     }
 
     tl.eventCallback('onComplete', function () {
-      ScrollTrigger.refresh();
-      revealIfInView();
+      if (window.ScrollTrigger) ScrollTrigger.refresh();
     });
-    gsap.delayedCall(0.9, revealIfInView);
+    gsap.delayedCall(1.4, forceReveal);
+    window.addEventListener('load', function () {
+      gsap.ticker.wake();
+      if (window.ScrollTrigger) ScrollTrigger.refresh();
+    });
   }
 
   initNavIndicator();

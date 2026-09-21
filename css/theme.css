@@ -1057,13 +1057,13 @@ li.publication:last-child {
 	border: 0;
 }
 
-.js-gsap .navbar .navbar-inner {
+.gsap-on .navbar .navbar-inner {
 	position: relative;
 }
 
-.js-gsap .navbar .nav li a,
-.js-gsap .navbar .nav li a:hover,
-.js-gsap .navbar .nav li.active a {
+.gsap-on .navbar .nav li a,
+.gsap-on .navbar .nav li a:hover,
+.gsap-on .navbar .nav li.active a {
 	border-bottom-color: transparent;
 }
 
@@ -1077,16 +1077,6 @@ li.publication:last-child {
 	pointer-events: none;
 	border-radius: 2px 2px 0 0;
 	will-change: transform, width;
-}
-
-.js-gsap #overview img,
-.js-gsap .navbar .nav li,
-.js-gsap .home-intro,
-.js-gsap .home-foci > li,
-.js-gsap .image-carousel,
-.js-gsap .home-join,
-.js-gsap .news-card {
-	visibility: hidden;
 }
 
 /* Home carousel */
@@ -1223,16 +1213,6 @@ li.publication:last-child {
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.js-gsap #overview img,
-	.js-gsap .navbar .nav li,
-	.js-gsap .home-intro,
-	.js-gsap .home-foci > li,
-	.js-gsap .image-carousel,
-	.js-gsap .home-join,
-	.js-gsap .news-card {
-		visibility: visible;
-	}
-
 	.carousel-progress span,
 	.nav-indicator {
 		transition: none;
